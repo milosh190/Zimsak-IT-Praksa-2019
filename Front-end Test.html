@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="fet.js"></script>
+    <meta charset="UTF-8">
+    <title>Front-end Test</title>
+    <style>
+        #animiraniBaner{ opacity: 0; animation: A 1s ease 1s 1 forwards }
+        @keyframes A{
+            0% {opacity: 1;}
+            25% {opacity: 0;}
+            50% {opacity: 1;}
+            75% {opacity: 0;}
+            100% {hight: 100px; margin 0px; opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <button class="tablink" onclick="openPage('Home',this)" id="defaultOpen" ><p>Home</p></button>
+    <button class="tablink" onclick="openPage('About',this)" ><p>About</p></button>
+    <button class="tablink" onclick="openPage('Work',this)" ><p>Work</p></button>
+    <button class="tablink" onclick="openPage('Contact',this)" > <p>Contact</p></button>
+</div>
+<div id="Home" class="tabcontent">
+    <tr>
+        <th><img id="animiraniBaner" src="logo.PNG" </th>
+    </tr>
+    <tr>
+        <th>Tekst</th>
+    </tr>
+    <tr>
+        <th><button>Button</button></th>
+    </tr><br>
+<a href="https://www.youtube.com/" target="_blank">GET TO KNOW US LITTLE BETTER</a>
+</div>
+
+<div id="About" class="tabcontent">
+    <div class="tab">
+        <button class="tablinks1" onclick="openTab('tab1',this)">WEBSITES</button>
+        <button class="tablinks1" onclick="openTab('tab2',this)">PHOTOGRAPHY</button>
+        <button class="tablinks1" onclick="openTab('tab3',this)">SEO</button>
+        <button class="tablinks1" onclick="openTab('tab4',this)">APPLICATIONS</button>
+    </div>
+    <div id="tab1" class="tabcontent1">T</div>
+    <div id="tab2" class="tabcontent1">A</div>
+    <div id="tab3" class="tabcontent1">B</div>
+    <div id="tab4" class="tabcontent1">?</div>
+</div>
+<div id="Work" class="tabcontent">
+    <lu>
+        <li>All</li>
+        <li>Print</li>
+        <li>Photography</li>
+        <li>Web</li>
+        <li>Applications</li>
+    </lu>
+</div>
+<div id="Contact" class="tabcontent">
+    <form>
+        CONTACT FORM: <br>
+        <input type="text" name="Ime" value="NAME" required><br>
+        <input type="email" name="Adresa" value="Email Address" required><br>
+        <input type="text" name="Predmet" value="Subject"><br>
+        <textarea name="komentar" maxlength="1000"></textarea><br>
+        <input type="submit" name="posalji" value="SEND MESSAGE">
+    </form>
+</div>
+
+
+</body>
+</html>
